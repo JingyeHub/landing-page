@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#container div {
+    flex-grow: 1;
+}
+
+/* Header Stylings */
+
+#header-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#header-section ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+#header-section img {
+    justify-self: start;
+}
+
+/* Project Stylings */
+
+#project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-section #cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Quote Stylings */
+
+#quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-section div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 600px;
+    flex-grow: 0;
+    padding: 10px;
+}
+
+#quote-section div p:last-child {
+    align-self: flex-end;
+}
+
+/* CTA-section Stylings */
+
+#cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta-section>div {
+    display: flex;
+    flex-grow: 0;
+    gap: 50px;
+}
+
+/* Footer Stylings */
+#footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
